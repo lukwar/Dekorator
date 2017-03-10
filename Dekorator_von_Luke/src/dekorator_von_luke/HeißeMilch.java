@@ -9,18 +9,18 @@ package dekorator_von_luke;
  *
  * @author lukwar
  */
-public class Soja extends ZutatDekorierer {
-    public Soja(Getränk getränk) {
-        super("Soja", getränk);
+public class HeißeMilch extends ZutatDekorierer {
+    public HeißeMilch(Getränk getränk) {
+        super("Heiße Milch", getränk);
     }
 
     @Override
     public String getBeschreibung() {
-        return "Soja";
+        return "Heiße Milch";
     }
 
     @Override
     public double preis() {
-        return getGetränk().preis() + 0.15;
+        return getGetränk().preis() + 0.10;
     }
 }

@@ -9,6 +9,13 @@ package dekorator_von_luke;
  *
  * @author lukwar
  */
-public class Entkoffeiniert {
+public class Entkoffeiniert extends Getränk {
+    public Entkoffeiniert(String beschreib) {
+        super(beschreib);
+    }
     
+    @Override
+    public double preis(){
+        return 1.05;
+    }
 }

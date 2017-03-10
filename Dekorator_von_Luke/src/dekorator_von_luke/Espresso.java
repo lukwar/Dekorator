@@ -9,6 +9,13 @@ package dekorator_von_luke;
  *
  * @author lukwar
  */
-public class Espresso {
+public class Espresso extends Getränk {
+    public Espresso(String beschreib) {
+        super(beschreib);
+    }
     
+    @Override
+    public double preis(){
+        return 1.99;
+    }
 }

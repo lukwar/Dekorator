@@ -9,6 +9,18 @@ package dekorator_von_luke;
  *
  * @author lukwar
  */
-public class Schoko {
-    
+public class Schoko extends ZutatDekorierer{
+    public Schoko(Getränk getränk) {
+        super("Schoko", getränk);
+    }
+
+    @Override
+    public String getBeschreibung() {
+        return "Schoko";
+    }
+
+    @Override
+    public double preis() {
+        return getGetränk().preis() + 0.20;
+    }
 }

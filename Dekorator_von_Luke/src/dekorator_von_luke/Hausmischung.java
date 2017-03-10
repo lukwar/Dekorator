@@ -9,6 +9,13 @@ package dekorator_von_luke;
  *
  * @author lukwar
  */
-public class Hausmischung {
+public class Hausmischung extends Getränk {
+    public Hausmischung(String beschreib) {
+        super(beschreib);
+    }
     
+    @Override
+    public double preis(){
+        return 0.89;
+    }
 }
